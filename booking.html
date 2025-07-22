@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende su cita!</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Bon dent logo.png" alt="Bon Dent logo">
+            </a>
+        </div>
+        <!-- Menu button in small devices -->
+        <button class="hamburger logo" id="hamburger-btn" onclick="toggleMenu()">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="booking.html">Agende su Cita</a></li>
+                <li><a href="service.html">Servicios</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Donde encontrarnos?</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section>
+        <h1>Agende su cita con nosotros!</h1>
+    </section>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget"
+        data-url="https://calendly.com/bondentcl?hide_landing_page_details=1&hide_gdpr_banner=1">
+    </div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+</body>
+<!-- Scroll to top button -->
+<button onclick="scrollToTop()" id="scrollBtn" title="Volver arriba">⬆️</button>
+<footer>
+    <p>&copy; 2025 - Bon Dent. Todos los derechos reservados</p>
+    <a href="https://facebook.com" target="_blank" rel ='noopener'>
+        <img src="images/facebook.png" alt="fb icon">
+    </a>
+    <a href="https://instagram.com" target="_blank" rel ='noopener'>
+        <img src="images/instagram.png" alt="instagram icon">
+    </a>
+</footer>
+</html>

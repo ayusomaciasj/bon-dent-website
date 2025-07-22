@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bont Dent</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class ="logo">
+            <a href="index.html">
+                <img src="images/Bon dent logo.png" alt="Bon Dent logo">
+            </a>
+        </div>
+        <!-- Menu button in small devices -->
+        <button class="hamburger" id="hamburger-btn" onclick="toggleMenu()">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="booking.html">Agende su Cita</a></li>
+                <li><a href="service.html">Servicios</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Donde encontrarnos?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1>Bienvenido a Bon Dent</h1>
+        <p>Donde tu sonrisa es nuestro trabajo</p>
+    </section>
+    <!-- Dark mode toggle button -->
+    <button id="darkModeToggle" aria-label="Toggle dark mode"></button>
+    <div class="slider">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="booking.html">
+                        <img src="images/home.jpg" alt="Agende su cita!">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="service.html">
+                        <img src="images/about.jpg" alt="Servicios">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="faq.html">    
+                        <img src="images/contact.jpg" alt="Frequently Asked Questions">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="contact.html">
+                        <img src="images/testimonios.jpg" alt="Como encontrarnos">
+                    </a>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <section>
+        <a href="booking.html" class="btn">Agende su cita</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 - Bon Dent. Todos los derechos reservados</p>
+            <a href="https://facebook.com" target="_blank" rel ='noopener'>
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel ='noopener'>
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+    </script>
+
+    <!-- Scroll to top button -->
+    <button onclick="scrollToTop()" id="scrollBtn" title="Volver arriba">⬆️</button>
+
+    <a href="https://wa.me/56979655921" class="whatsapp-float" target="_blank" rel="noopener">
+        <img src="images/whatsapp.png" alt="WhatsApp Chat" />
+        <span class="whatsapp-label">Preguntas?<br>Escribanos a nuestro WhatsApp!</span>
+    </a>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const calendly = document.querySelector(".calendly-inline-widget");
+            if (calendly) calendly.style.height = `${window.innerHeight}px`;
+        });
+    </script>
+</body>
+</html>

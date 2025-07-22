@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Bon dent logo.png" alt="Bon Dent logo">
+            </a>
+        </div>
+        <!-- Menu button in small devices -->
+        <button class="hamburger logo" id="hamburger-btn" onclick="toggleMenu()">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="booking.html">Agende su Cita</a></li>
+                <li><a href="service.html">Servicios</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Donde encontrarnos?</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <h1>Cuales son nuestros servicios?</h1>
+            <div class="services-grid">
+                <div class="service-tittle">
+                    <img src="images/traditional.jpg" alt="Brackets tradicionales">
+                    <h2>Bracket Tradicionales</h2>
+                    <p>Valor instalacion: $249.000</p>
+                    <p>Pago Mensual: 30.000</p>
+                    <p>* Valor correspondiente al usar ISAPRE</p>
+                </div>
+                <div class="service-tittle">
+                    <img src="images/self-ligating-braces.jpg" alt="Brackets autoligados">
+                    <h2>Brackets Autoligados</h2>
+                    <p>Valor instalacion: 290.000 - 330.000</p>
+                    <p>Pago mensual: 28.000</p>
+                    <p>*Rango de precio cambia de acuerdo a gravedad del caso</p>
+                </div>
+                <div class="service-tittle">
+                    <img src="images/invisalign.jpg" alt="invisalign braces">
+                    <h2>Invisalign</h2>
+                    <p>Valor instalacion: 2.100.000 - 3.400.000</p>
+                    <p>Valor mensual: 60.000</p>
+                    <p>*Precio depende en el tipo de Invisalign que se este aplicando(Express, Lite, Moderate, Comprehensive)</p>
+                </div>
+                <div class="service-tittle">
+                    <img class="inv-img" src="images/retainers1.jpg" alt="Retenedores">
+                    <h2>Retenedores</h2>
+                    <p>desde $45000</p>
+                    <p>*Retencion post-tratamiento</p>
+                </div>
+                <div class="service-tittle">
+                    <img src="images/Brackets de Zafiro.jpeg" alt="Brackets de Zafiro">
+                    <h2>Brackets de Zafiro</h2>
+                    <p>Valor instalación: $320.000</p>
+                    <p>Pago mensual: $32.000</p>
+                    <p>*Brackets transparentes y discretos</p>
+                </div>
+                <div class="service-tittle">
+                    <img src="images/lingual-braces.jpg" alt="Brackets Linguales">
+                    <h2>Brackets Linguales</h2>
+                    <p>Valor instalación: $450.000</p>
+                    <p>Pago mensual: $40.000</p>
+                    <p>*Colocados en la parte interna de los dientes</p>
+                </div>
+                <div class="service-tittle">
+                    <img src="images/dental-cleaning.jpg" alt="Limpieza Dental">
+                    <h2>Limpieza Dental</h2>
+                    <p>Valor por sesión: $25.000</p>
+                    <p>*Eliminación de sarro y placa</p>
+                </div>
+                <div class="service-tittle">
+                    <img src="images/dental whitening.jpg" alt="Blanqueamiento Dental">
+                    <h2>Blanqueamiento Dental</h2>
+                    <p>Desde $80.000</p>
+                    <p>*Mejora estética de la sonrisa</p>
+                </div>
+            </div>
+            <section class="payment-estimator">
+                <h2>Calculadora de Pagos</h2>
+                <label for="serviceSelect">Seleccione un servicio:</label>
+                <select id="serviceSelect" onchange="estimatePayment()">
+                    <option value="">-- Seleccione --</option>
+                    <option value="tradicionales">Brackets tradicionales</option>
+                    <option value="autoligados">Brackets Autoligados</option>
+                    <option value="invisalign">Invisalign</option>
+                    <option value="lingual">Brackets Linguales</option>
+                    <option value="blanqueamiento">Blanqueamiento dental</option>
+                    <option value="retenedores">Retenedores</option>
+                </select>
+            
+                <div id="estimateResult" class="estimate-result"></div>
+            </section>
+        </main>
+        <!-- Scroll to top button -->
+        <button onclick="scrollToTop()" id="scrollBtn" title="Volver arriba">⬆️</button>
+
+        <footer>
+            <p>&copy; 2025 - Bon Dent. Todos los derechos reservados</p>
+            <a href="https://facebook.com" target="_blank" rel='noopener'>
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel='noopener'>
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
